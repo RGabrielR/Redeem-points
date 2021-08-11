@@ -1,0 +1,62 @@
+
+.background-coins{
+    position:fixed;
+    bottom: -100vh;
+    transform-style: preserve-3d;
+    z-index: -1;
+  }
+
+  .sparkle-bg{
+    position:fixed;
+    bottom: -100vh;
+    transform-style: preserve-3d;
+    z-index: -1;
+  }
+
+
+
+
+$total: 40;
+@for $i from 1 through $total {
+  $scale:random(2) - .2;
+  
+  .background-coins:nth-child(#{$i}){
+    left:random(121) * 1% - 40;
+    animation: raise#{$i} 3 + random(20) +s linear infinite;
+    animation-delay:random(20) - 10 + s;
+    transform: scale(.2 * $i - .2) rotate(random(360) + deg);
+    z-index: $i - 50;
+    
+
+   
+    @keyframes raise#{$i} {
+      to{
+       bottom: 300%;
+       transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+      }
+    }
+  }
+}
+
+
+$total: 40;
+@for $i from 1 through $total {
+  $scale:random(2) - .4;
+  
+  .sparkle-bg:nth-child(#{$i}){
+    left:random(140) * 1% - 40;
+    animation: raise#{$i} 6 + random(40) +s linear infinite;
+    animation-delay:random(40) - 20 + s;
+    transform: scale(.3 * $i - .2) rotate(random(360) + deg);
+    z-index: $i - 50;
+    
+
+   
+    @keyframes raise#{$i} {
+      to{
+       bottom: 300%;
+       transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+      }
+    }
+  }
+}

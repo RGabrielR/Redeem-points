@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@900&display=swap');
+
+body{
+    font-family: 'Darker Grotesque', sans-serif;
+    overflow-x: hidden;
+}
+
+.background-coins{
+    position: absolute;
+    z-index: 1
+}
+.sparkle-bg{
+        position: absolute;
+        z-index: 1
+    
+}
+.navbar{
+    z-index:5
+}
+.tooltip{
+    position:relative;
+}
+.tooltip h5{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    top: 5rem;
+    left: 2rem;
+    right: 0;
+    background: #333;
+    color: #fff;
+    
+}
+.tooltip:hover h5 {
+    position:fixed;
+    width: 9.5rem;
+    height: 2rem;
+    display: block;
+    z-index: 8;
+    left: 50em;
+    top: 4em;
+  }
+
+.middle-button{
+   position: inline;
+   margin-top: 3rem;
+}
+
+.sortBar{
+    width: 20%;
+    outline: black 6em;
+}
+.card{
+    position: relative;
+}
+.bottom-card{
+    position: absolute;
+    bottom: 0.25rem;
+    cursor: default;
+    left: 5%;
+}
+
+@media (max-width: 768px) {
+    .sortBar{
+        width: 50%;
+        margin-bottom: 1em;
+    }
+    .middle-button{
+        position: inline;
+        margin-top: 0;
+     }
+     /* Redeemed products page */
+    .back-arrow{
+        width: 20%;
+        margin-top: 0;
+        top: 5rem;
+    }
+}
+/* Redeemed products page */
+.back-arrow{
+    position: absolute;
+
+}
