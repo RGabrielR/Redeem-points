@@ -7,7 +7,7 @@ return async (dispatch) => {
           {
             method: 'POST',
            headers: {
-            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGYyMDYzZDY3Mjk2ZTAwMTk5NjQxM2QiLCJpYXQiOjE2MjY0NzQwNDV9.O1AbUIcgu_75ULZWX2AzbliYXapEYijzL89mPB05R7s',
+            'Authorization': process.env.authKey,
             "Content-Type": "application/json",
             'Accept': 'application/json'
           },

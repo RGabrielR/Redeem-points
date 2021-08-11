@@ -35,3 +35,4 @@ yarn-error.log*
 
 #where the authkey is hidden
 .next.config.js
+.vercel

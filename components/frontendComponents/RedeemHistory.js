@@ -4,12 +4,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { fetchUser } from "../redux/actions/userActions";
 
-const redeemedProducts = (props) => {
+const RedeemedProducts = (props) => {
     
     const {redeemHistory} = props.user.user;
+    const {fetchUser} = props;
     
     useEffect(() => {
-      props.fetch_user();
+      props.fetchUser();
     }, []);
   
     if(!redeemHistory) return 'Loading...';
@@ -54,9 +55,9 @@ const mapStateToProps = (state) => ({
 });
  const mapDispatchToProps = (dispatch) => {
   return {
-    fetch_user: () => {
+    fetchUser: () => {
       dispatch(fetchUser());
     }
   }
  }
-export default connect(mapStateToProps,mapDispatchToProps)(redeemedProducts);
+export default connect(mapStateToProps,mapDispatchToProps)(RedeemedProducts);
