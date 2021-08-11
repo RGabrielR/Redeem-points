@@ -27,7 +27,7 @@ const Products = (props) => {
     props.fetch_products();
   }, []);
 
-  if (!products) return "cargando...";
+  if (!products) return <div className="lds-circle"> </div>;
 
   const sortProducts = (option) => {
     switch (option.value) {

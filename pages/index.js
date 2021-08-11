@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Background from '../components/frontendComponents/background';
+import Background from '../components/frontendComponents/Background';
 import User from '../components/frontendComponents/User';
 import Products from '../components/frontendComponents/Products';
 export default function Home() {

@@ -18,7 +18,7 @@ const User = (props) => {
     props.fetchUser();
   }, []);
 
-if (!user) return "cargando...";
+if (!user) return <div className="lds-circle"> </div>;
   const buythousandpoints = () => {
     props.buy1000();
     Swal.fire("Perfect!", "You gain 1000 points!", "success");

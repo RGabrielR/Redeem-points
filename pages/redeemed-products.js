@@ -1,11 +1,11 @@
-import RedeemHistory from '../components/frontendComponents/redeemHistory';
-import BackgroundRH from '../components/frontendComponents/backgroundRH';
+import RedeemedVault from '../components/frontendComponents/RedeemedVault';
+import BackgroundRH from '../components/frontendComponents/BackgroundRH';
 
 const redeemedProducts = () => {
     return (
             <>
             <BackgroundRH/>
-            <RedeemHistory/>
+            <RedeemedVault/>
             </>
 
       );
