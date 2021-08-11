@@ -34,5 +34,5 @@ yarn-error.log*
 .vercel
 
 #where the authkey is hidden
-
+.tailwind.config.js
 .vercel
