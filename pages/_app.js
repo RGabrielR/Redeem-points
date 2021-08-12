@@ -8,6 +8,7 @@ import Head from 'next/head';
 import 'tailwindcss/tailwind.css';
 import '../css/styles.css';
 import '../css/background.scss';
+
 class myApp extends App {
   render() {
     const {Component, pageProps} = this.props

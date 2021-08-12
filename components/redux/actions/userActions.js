@@ -1,10 +1,9 @@
 import * as t from '../types';
-
 export const fetchUser = () => {
       return  (dispatch) => {
         fetch('https://coding-challenge-api.aerolab.co/user/me',
           { headers: {
-            'Authorization': process.env.authKey
+            'Authorization': process.env.NEXT_PUBLIC_AUTHKEY
           }}
           ).then(p => p.json())
           .then(data => {
@@ -36,7 +35,7 @@ export const buy1000 =  () => {
           {
             method: 'POST',
            headers: {
-            'Authorization': process.env.authKey,
+            'Authorization': process.env.NEXT_PUBLIC_AUTHKEY,
             "Content-Type": "application/json"
           },
            body: JSON.stringify({"amount": 1000})
@@ -52,7 +51,7 @@ export const buy5000 =  () => {
           {
             method: 'POST',
            headers: {
-            'Authorization': process.env.authKey,
+            'Authorization': process.env.NEXT_PUBLIC_AUTHKEY,
             "Content-Type": "application/json"
           },
            body: JSON.stringify({"amount": 5000})
@@ -68,7 +67,7 @@ export const buy7500 =  () => {
           {
             method: 'POST',
            headers: {
-            'Authorization': process.env.authKey,
+            'Authorization': process.env.NEXT_PUBLIC_AUTHKEY,
             "Content-Type": "application/json"
           },
            body: JSON.stringify({"amount": 7500})

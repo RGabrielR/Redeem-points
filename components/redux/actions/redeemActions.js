@@ -7,7 +7,7 @@ return async (dispatch) => {
           {
             method: 'POST',
            headers: {
-            'Authorization': process.env.authKey,
+            'Authorization': process.env.NEXT_PUBLIC_AUTHKEY,
             "Content-Type": "application/json",
             'Accept': 'application/json'
           },

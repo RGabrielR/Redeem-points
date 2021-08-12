@@ -5,7 +5,7 @@ export const fetchProducts = () => {
       return  (dispatch) => {
         fetch('https://coding-challenge-api.aerolab.co/products',
           { headers: {
-            'Authorization': process.env.authKey
+            'Authorization': process.env.NEXT_PUBLIC_AUTHKEY
           }}
           ).then(p => p.json())
           .then(data => {
@@ -39,7 +39,7 @@ export const sortingHighest= products => {
   return (dispatch) => {
  fetch('https://coding-challenge-api.aerolab.co/products',
           { headers: {
-            'Authorization': process.env.authKey
+            'Authorization': process.env.NEXT_PUBLIC_AUTHKEY
           }}
           ).then(p => p.json())
           .then(data => {
@@ -60,7 +60,7 @@ export const sortingLowest= products => {
   return (dispatch) => {
    fetch('https://coding-challenge-api.aerolab.co/products',
           { headers: {
-            'Authorization': process.env.authKey
+            'Authorization': process.env.NEXT_PUBLIC_AUTHKEY
           }}
           ).then(p => p.json())
           .then(data => {
@@ -81,7 +81,7 @@ export const sortingPredefined= () => {
       return  (dispatch) => {
         fetch('https://coding-challenge-api.aerolab.co/products',
           { headers: {
-            'Authorization': process.env.authKey
+            'Authorization': process.env.NEXT_PUBLIC_AUTHKEY
           }}
           ).then(p => p.json())
           .then(data => {
@@ -103,7 +103,7 @@ export const sortCanAfford = (points) => {
   return (dispatch) => {
     fetch('https://coding-challenge-api.aerolab.co/products',
           { headers: {
-            'Authorization': process.env.authKey
+            'Authorization': process.env.NEXT_PUBLIC_AUTHKEY
           }}
           ).then(p => p.json())
           .then(data => {
@@ -127,7 +127,7 @@ export const sortCannotAfford =  points => {
   return (dispatch) => {
     fetch('https://coding-challenge-api.aerolab.co/products',
           { headers: {
-            'Authorization': process.env.authKey
+            'Authorization': process.env.NEXT_PUBLIC_AUTHKEY
           }}
           ).then(p => p.json())
           .then(data => {

@@ -9,6 +9,7 @@ import {
 import Swal from "sweetalert2";
 import Image from "next/image";
 import Link from "next/link";
+
 const User = (props) => {
   const { 
   user
