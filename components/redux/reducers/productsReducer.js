@@ -63,34 +63,3 @@ const productsReducer = (state = initialState ,  action) => {
   };
 
   export default productsReducer;
-
-
-  // case 'sortHighest':
-  //       console.log(products)
-  //     state = request(req, (error, response) => {
-  //       if(error){
-  //        throw new Error(error.message)
-  //       }
-  //       const productsData = JSON.parse(response.body)
-  //       return productsData;
-  //     }).then(productsData.sort((a, b) => (a.cost - b.cost)))
-  //     case 'sortLowest':
-  //       console.log(products)
-  //       request(req, (error, response) => {
-  //         if(error){
-  //          throw new Error(error.message)
-  //         }
-  //         const productsData = JSON.parse(response.body)
-  //         return productsData;
-  //       }).then(productsData.sort((a, b) => (b.cost - a.cost)))
-  //     case 'predefined':
-  //       return request(req, (error, response) => {
-  //         if(error){
-  //          throw new Error(error.message)
-  //         }
-  //         const productsData = JSON.parse(response.body)
-  //         return productsData;
-  //       }).then(productsData.sort((a, b) => (a.id - b.id)))
-  //     default:
-  //       return 'error: This value dont belong here'
-   

@@ -16,7 +16,6 @@ class myApp extends App {
       <>
       <Head>
         <title>AeroContest</title>
-        <link rel="icon" href="/money.png" />
       </Head>
       <Provider store={store}>
           <Component {...pageProps} />
